@@ -155,7 +155,8 @@
       const responseDiv = document.getElementById('response');
 
       try {
-        const res = await fetch('https://animateme-backend.onrender.com', { // Replace with your deployed backend URL
+        const res = await fetch('https://animateme-backend.onrender.com/generate', {
+ // Replace with your deployed backend URL
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
